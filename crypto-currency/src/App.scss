@@ -1,0 +1,94 @@
+@import "variables";
+
+*{
+    background-color: $bodyBg;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.App{
+    .appContainer{
+        .appWrapper{
+            .coinSearch{
+                text-align: center;
+                .searchTitle{
+                    @include font(2rem,500,$fontColor);
+                    margin-bottom: 1%;
+                }
+                margin-top: 3%;
+                margin-bottom: 3%;
+               input{
+                    background: $inputBg;
+                    color: $inputPlaceHolder;
+                    border: none;
+                    outline: none;
+                    border-radius: 4px;
+                    width: 261px;
+                    padding: 10px 10px;
+                &::placeholder{
+                    color: $inputPlaceHolder;
+                }
+                }
+                
+            }
+            .coinInfo{
+                .coinFlex{
+                    display: flex;
+                    align-items: center;
+                    gap: 5%;
+                    padding-bottom: 2%;
+                    padding-top: 2%;
+                    border-bottom: 1px solid #fff;
+                    width: 82%;
+                    margin: 0 auto;
+                    .image-name{
+                        display: flex;
+                        align-items: center;
+                        gap: 5%;
+                        width: 300px;
+                        font-size: 1.3rem;
+                        color: $fontColor;
+                        font-weight: 500;
+                        span{
+                            font-size: 1.3rem;
+                            color: $fontColor;
+                            font-weight: 500;
+                            }
+                        img{
+                            width: 30px;
+                        }
+                    }
+                    .symbol{
+                        width: 50px;
+                    }
+                    .price{
+                        width: 105px;
+                    }
+                    .volume{
+                        width: 120px;
+                    }
+                    .priceChange{
+                        width: 41px;
+                    }
+                    .red{
+                        color: red !important;
+                    }
+                    .green{
+                        color: green !important;
+                    }
+                    .white{
+                        color: #fff !important;
+                    }
+
+                    .symbol,.price,.volume,.priceChange,.marketCap{
+                        font-size: 1.3rem;
+                        color: $fontColor;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

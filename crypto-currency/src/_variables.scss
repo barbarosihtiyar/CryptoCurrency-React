@@ -1,0 +1,16 @@
+$bodyBg : #1a1a1c;
+$inputBg:linear-gradient(
+    -225deg,
+    #ac32e4 0%,
+    #7918f2 48%,
+    #4801ff 100%
+  );
+  $inputPlaceHolder:#e2e2e2;
+  $fontColor:#fff;
+
+  @mixin font($size,$weight,$color){
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+  }
+

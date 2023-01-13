@@ -1,4 +1,5 @@
 import "./App.css"
+import "./reset.css"
 import axios from 'axios';
 import {useState,useEffect} from 'react';
 import Coin from "./Components/Coin";
@@ -31,7 +32,7 @@ function App() {
       <div className="coinSearch">
       <h1 className="searchTitle">Search a Currency</h1>
         <form>
-          <input type="text" className="searchInput" onChange={changeInput} />
+          <input placeholder="Search" type="text" className="searchInput" onChange={changeInput} />
         </form>
         </div>
         <div className="coinInfo">
@@ -44,7 +45,7 @@ function App() {
           symbol={coin.symbol}
           marketcap={coin.market_cap}
           price={coin.current_price}
-          priceChange={coin.price_change_24h}
+          priceChange={coin.price_change_percentage_24h}
           volume={coin.total_volume}
           />
           </div>
